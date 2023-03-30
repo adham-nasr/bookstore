@@ -1,0 +1,236 @@
+html {
+    font-size: 17px;
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  }
+  .my_button {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+    .my_button1 {
+    background-color:#7a6517;
+    color:  white;
+    border: 2px solid #7a6517;
+    }
+
+    .my_button1:hover {
+    background-color: #7a6517;
+    color: white;
+    border: 2px solid #7a6517;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+    .my_button1 {border-radius: 12px;}
+
+    .my_button2 {
+    background-color:#7a6517;
+    color:  white;
+    border: 2px solid #7a6517;
+    
+    }
+
+    .my_button2:hover {
+    background-color: #7a6517;
+    color: white;
+    border: 2px solid #7a6517;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+    .my_button2 {border-radius: 12px;}
+  body {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background : linear-gradient(rgba(0, 0, 0,.4), rgba(0, 0, 0,.4)) , url('/static/images/background.jpg');
+  }
+  
+  .my_form__fieldset {
+    padding: 40px 20px;
+
+  }
+  
+  .my_form__fieldset:not(:last-of-type) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  .my_form__input {
+    font-size: 2rem;
+ }
+  
+  .my_form__select {
+    padding: 4px 2px;
+  }
+  
+  .my_form__label {
+    margin-right: 20px;
+    color: #f2f2f2  ;
+  }
+  
+  .my_form__submit {
+    /* padding: 8px 16px; */
+    cursor: pointer;
+    float: left;
+    background-color:#7a6517;
+    color:  white;
+    border: 2px solid #7a6517;
+  }
+  
+  .my_form__submit:hover {
+    background-color: #7a6517;
+    color: white;
+    border: 2px solid #7a6517;
+    /* box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19); */
+  }
+
+  table, td, th {
+    color: white;
+
+  }
+  
+ table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  td,th {
+    
+    background : linear-gradient(to right , rgba(0,0,0,0.9), rgba(0,0,0,0.1));
+}
+  th {
+    text-align: left;
+  }
+  /* Add a black background color to the top navigation */
+.my_topnav {
+    background-color: #333;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .my_topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .my_topnav a:hover {
+    background-color: #7a6517;
+    color: white;
+  }
+  
+  /* Add a color to the active/current link */
+  .my_topnav a.active {
+    background-color: #7a6517;
+    color: white;
+  }
+
+   #my_search {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #333;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    transition: width 0.4s ease-in-out;
+  }
+  
+  #my_search {
+    width: 100%;
+  } 
+
+  .add_text{
+    color:white;
+  }
+  .div1_add{
+    display: flex;
+    justify-content: center;
+    margin-top: 10% ;
+  }
+  .div1_add label{
+    display: inline;
+    height: 40px;
+    margin: 1% 3%;
+    font-size: 30px;
+  }
+  .div1_add select{
+      height: 40px;
+      margin: 1% 0;
+      font-size: 20px;
+  }
+  .div3_add {
+    display: flex;
+    justify-content: center;
+  }
+
+  .my_error{
+    color: red;
+    margin: 5%;
+  }
+
+  h6{
+    text-align: center;
+  } 
+  .cards-wrapper{
+      display: flex;
+      justify-content: flex-start;
+  }
+  .my_img-style{
+      width : 100%;
+      height : 80%;
+      object-fit: contain;
+  }
+  .my_flexbox-item{
+      background: beige;
+      width: 20%;
+      height : 320px;
+      margin: 5px;
+      padding: 5px;
+      overflow: hidden;
+      display:flex;
+      flex-direction:column;
+      align-items : center;
+  }
+  .my_flexbox-item p{
+    margin-bottom: 4px;
+    font-size: 12px;
+    text-align: center;
+  }
+  .allgenres{
+    margin: 2% 4%;
+  }
+  .genre{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .my_butt{
+    width: 5%;
+  }
+  .my_butt span{
+    background-color: rgb(157, 170, 38);
+    border-radius: 20px;
+  }
+  .genre_name{
+    margin-left: 5.5%;
+    margin-right: 5.5%;
+    padding: 4px;
+    background-color: wheat;
+    margin-top: 100px;
+  }
+  .ptitle{
+    font-weight: bold;
+  }
+  .my_nav_wrapp{
+    display: flex;
+    justify-content: flex-end;
+  }
