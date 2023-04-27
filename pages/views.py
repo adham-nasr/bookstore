@@ -2,6 +2,10 @@ from django.shortcuts import render
 from .load import start
 from .models import Book
 from .helpers import dataToTemplate
+from django.contrib.auth.decorators import login_required
+from django.views import View
+
+
 # Create your views here.
 
 
@@ -21,4 +25,14 @@ def load_data(request):
     return render(request,'index.html')
 
 
+class MybooksView(View):
 
+    def get(self, request, *args, **kwargs):
+
+        user = request.user
+        q = list(user.books.all())
+        print(q)
+        books = dataToTemplate(q)
+        print(books)
+
+        return render(request,'mybooks.html',{'data':books})
