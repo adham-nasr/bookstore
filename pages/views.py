@@ -4,6 +4,8 @@ from .models import Book
 from .helpers import dataToTemplate
 from django.contrib.auth.decorators import login_required
 from django.views import View
+from django.utils.decorators import method_decorator
+
 
 
 # Create your views here.
@@ -25,11 +27,14 @@ def load_data(request):
     return render(request,'index.html')
 
 
+@method_decorator(login_required(login_url='/auth/login/'), name='dispatch')
 class MybooksView(View):
 
     def get(self, request, *args, **kwargs):
 
         user = request.user
+        print("--------")
+        print(user)
         q = list(user.books.all())
         print(q)
         books = dataToTemplate(q)

@@ -6,5 +6,5 @@ from django.contrib.auth.decorators import login_required
 urlpatterns =[
     path('',views.home),
     path('loaddata/',views.load_data),
-    path('mybooks/',login_required(views.MybooksView.as_view()))
+    path('mybooks/',views.MybooksView.as_view())
 ]
